@@ -1,0 +1,16 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+<!-- ayayaya -->
+{% block content %}
+<!-- ayayayaski -->
+
+<div class="post-entry">
+  <h2><a href="">{{ object.title }}</a></h2>
+  <p>{{ object.body }}</p>
+
+  <a href="{% url 'edit_post' object.id %}">Edit post</a>
+  <a href="{% url 'delete_post' object.id %}">Delete post</a>
+</div>
+
+<!-- hey hey -->
+{% endblock content %}

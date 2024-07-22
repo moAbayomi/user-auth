@@ -1,0 +1,13 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+<!-- ayayaya -->
+{% block content %}
+<!-- ayayayaski -->
+{% for post in object_list %}
+<div class="post-entry">
+  <h2><a href="{%url 'detail' post.id %}">{{ post.title }}</a></h2>
+  <p>{{ post.body }}</p>
+</div>
+{% endfor %}
+<!-- hey hey -->
+{% endblock content %}

@@ -1,0 +1,15 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+<!-- ayayaya -->
+{% block content %}
+
+<h1>Login here hun. kek</h1>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <!-- ayaya -->
+  {{form.as_p}}
+  <input type="submit" value="Login" />
+</form>
+<!-- hey hey -->
+{% endblock content %}
